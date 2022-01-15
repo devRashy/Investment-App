@@ -10,7 +10,7 @@ public class Driver {
         System.out.println("Enter the number of days you wanna invest");
         int numberOfDays = scan.nextInt();
         int day = 1;
-        double closingPrice = 0.1;
+        double closingPrice = 0;
         DecimalFormat df = new DecimalFormat("0.00");
         double totalEarnings = 0;
 
@@ -37,7 +37,7 @@ public class Driver {
             System.out.println(" cheers! You made a total of " + totalEarnings + " in " + numberOfDays + "days");
         }
        else {
-            System.out.println("oops you lost " + df.format(-totalEarnings )+ " in " + numberOfDays + " days");
+            System.out.println("oops you lost " + df.format((-totalEarnings ))+ " in " + numberOfDays + " days");
         }
     }
 
